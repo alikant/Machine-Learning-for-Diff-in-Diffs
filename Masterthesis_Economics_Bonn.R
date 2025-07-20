@@ -389,7 +389,7 @@ for (smpl in N) {
             # Number of covariates in the random forest
             mtry.value<- max(5,floor(sqrt(p)))
             # ML methods for g nuisance (indeed, it is m nuisance in our DGPs)
-            # Neural networks
+            # Neural network
             ml_g <- lrn("regr.nnet", size = 5, decay = 0.01, maxit = 200)
             # Random forest
             #ml_g <- lrn("regr.ranger", num.trees = 300, mtry=mtry.value, min.node.size = 2, max.depth = 5)
@@ -528,7 +528,7 @@ for (smpl in N) {
             # Number of covariates in the random forest
             mtry.value<- max(5,floor(sqrt(p)))
             # ML methods for g nuisance (indeed, it is m nuisance in our DGPs)
-            # Neural networks
+            # Neural network
             ml_g <- lrn("regr.nnet", size = 5, decay = 0.01, maxit = 200)
             # Random forest
             #ml_g <- lrn("regr.ranger", num.trees = 300, mtry=mtry.value, min.node.size = 2, max.depth = 5)
@@ -667,7 +667,7 @@ for (smpl in N) {
             # Number of covariates in the random forest
             mtry.value<- max(5,floor(sqrt(p)))
             # ML methods for g nuisance (indeed, it is m nuisance in our DGPs)
-            # Neural networks
+            # Neural network
             ml_g <- lrn("regr.nnet", size = 5, decay = 0.01, maxit = 200)
             # Random forest
             #ml_g <- lrn("regr.ranger", num.trees = 300, mtry=mtry.value, min.node.size = 2, max.depth = 5)
